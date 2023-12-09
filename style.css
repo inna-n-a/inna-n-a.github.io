@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    background-color: #242424;
+    font-size: 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 7vh;
+    padding: 0.2em 0.5em;
+    font-size: 0.5rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.items {
+    margin: 0 auto;
+}
+
+nav ul li,
+.menu-btn {
+    list-style-type: none;
+    display: inline;
+    padding: 0 0.5em;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+    /* border: 0.3rem solid transparent; */
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color: #EC5C8C;
+    color: white;
+    /* border:0.3rem solid #37745B; */
+}
+
+.cv-btn {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    padding: 1rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.cv-btn:hover {
+    background-color: #EC5C8C;
+    color: white;
+
+}
+
+.cv-btn a:hover {
+    background-color: #EC5C8C;
+    color: white;
+}
+
+button a {
+    transition: 0.4s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+/* button a:hover {
+    background-color: #EC5C8C;
+    color: #ffffff;
+} */
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a {
+    transition: 0.4s;
+    font-size: 1.2rem;
+    padding: 0 0.5em;
+}
+
+
+
+nav ul li a:hover {
+    color: #EC5C8C;
+}
+
+.header {
+    /* display: flex; */
+    margin: 0rem auto;
+    /* align-items: center; */
+    font-size: 2.5rem;
+    line-height: 1.1;
+    /* padding: 8rem 1rem; */
+    padding-top: 7.2vh;
+    padding-left: 1rem;
+    /* justify-content: end; */
+    background-image: url(./imgs/header-bckgr.png);
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    height: 100vh;
+    margin-top: 7.2vh;
+}
+
+.header-text {
+    padding-left: 5rem;
+    padding-top: 3rem;
+    width: 50%;
+}
+
+.header-frontend {
+    color: #EC5C8C;
+    font-weight: bold;
+}
+
+/* .about {
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem auto;
+    align-items: center;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    padding: 8rem 1rem;
+    padding-top: 7.2vh;
+    padding-left: 1rem;
+    height: 100vh;
+} */
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 0 5rem 2rem 5rem;
+    height: 100vh;
+    /* background-color: #2E2E2E; */
+    
+}
+
+.about-text {
+    width: 50%;
+    align-self: center;
+}
+
+.about-text p{
+    text-align: right;
+}
+.about-img {
+    align-self: center;
+    
+    width: 50%;
+}
+
+.about-img img{
+    height: 70vh;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 0 5rem 2rem 5rem;
+    height: 100vh;
+    /* background-color: #2E2E2E; */
+    
+}
+
+.skills-text {
+    width: 50%;
+    align-self: center;
+    padding-right: 2rem;
+}
+.skills-img {
+    align-self: center;
+    
+    width: 50%;
+}
+
+.skills-img img{
+    height: 70vh;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 0 5rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.projects-title{
+    font-size: 2rem;
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 2;
+}
+
+.projects-slider{
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 3;
+}
+
+
+
+
+
+/* .header-img {
+    /* background-image: url(./imgs/header-img.png); */
+
+/* display: flex;
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+z-index: 999;
+font-size: 0.5rem;
+justify-content: space-between;
+padding: 0.2em 0.8em;
+background-color: #1b1a1a; */
