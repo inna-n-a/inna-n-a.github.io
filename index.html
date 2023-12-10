@@ -5,25 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
     <title>Финальный проект</title>
 </head>
 
 <body>
-    <div class="top">
-        <div class="logo"><img src="./imgs/logo.svg" alt=""></div>
+    <div class="top" >
+        <div class="logo"><a href="#header"><img src="./imgs/logo.svg" alt=""></a></div>
         <nav class="menu">
             <ul class="items">
-                <li><a href="">Обо мне</a></li>
-                <li><a href="">Навыки</a></li>
-                <li><a href="">Проекты</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#feedback">Контакты</a></li>
             </ul>
             <ul class="menu-btn">
-                <li><a href="" class="btn">Обратная связь</a></li>
+                <li><a href="#feedback" class="btn">Обратная связь</a></li>
             </ul>
         </nav>
     </div>
-    <div class="header">
+    <div class="header" id="header">
         <div class="header-text">
             <h1> Я <span class="header-frontend">FRONTEND</span> <br>
                 РАЗРАБОТЧИК </h1>
@@ -34,7 +35,7 @@
             </button>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-img"><img src="./imgs/about-img.png" alt=""></div>
         <div class="about-text">
             <h1> ОБО <span class="header-frontend">МНЕ</span> </h1>
@@ -52,7 +53,7 @@
                 Developer focused on making a perfect</p>
         </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="skills-text">
             <h1> МОИ <span class="header-frontend">НАВЫКИ</span> </h1>
             <p>I’m a UI/UX Designer & Front-end
@@ -70,29 +71,57 @@
         </div>
         <div class="skills-img"><img src="./imgs/skills-img.png" alt=""></div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="projects-title">
             <h1> МОИ <span class="header-frontend">ПРОЕКТЫ</span> </h1>
         </div>
         <div class="projects-slider">
-            <div class="projects-item item1"></div>
-            <div class="projects-item item2"></div>
-            <div class="projects-item item3"></div>
-            <div class="projects-item item4"></div>
+            <img class="projects-slider-img" src="./imgs/project-1.png" alt="">
+            <img class="projects-slider-img" src="./imgs/project-2.png" alt="">
+            <img class="projects-slider-img" src="./imgs/project-3.png" alt="">
+            <div>
+                <img src="./imgs/arrow forward.svg" alt="" class="controls right-arr">
+            </div>
+            <div>
+                <img src="./imgs/arrow back.svg" alt="" class="controls left-arr">
+            </div>
         </div>
-        <div class="projects-text">
-            <p>I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect</p>
+    </div>
+    <div class="contacts" id="feedback">
+        <div class="feedback-title">
+            <h1> ОБРАТНАЯ <span class="header-frontend">СВЯЗЬ</span> </h1>
+        </div>
+        <section class="feedback-form">
+            <form action="" method="POST">
+                <div class="form-row">
+                    <div class="name-push">
+                        <!-- <label for="Name" class="label1"> Name</label> -->
+                        <input type="text" name="Name" id="Name" required placeholder="полное имя">
+                    </div>
+                    <div class="email-push">
+                        <!-- <label for="email" class="label2"> E-mail</label> -->
+                        <input type="email" name="email" id="email" required placeholder="e-mail">
+                    </div>
+                </div>
+                <div class="message--push">
+                    <!-- <label for="message" class="label3"> Message </label> -->
+                    <textarea placeholder="сообщение..." required name="message" rows="5" cols="100"
+                        id="message"></textarea>
+                </div>
+                <!-- <br> -->
+                <div class="form-btn">
+                    <input type="submit" value="отправить" name="button" required id="SendMessage"
+                        onclick="myfunction()">
+                </div>
+            </form>
+        </section>
+        <div class="contacts-list">
+            <div class="contacts-phone">
+                <img src="./imgs/phone.svg" alt="" class="icns"><p>  +7 999 123 45 67</p>
+            </div>
+            <div class="contacts-email">
+                <img src="./imgs/email.svg" alt="" class="icns"><p>  myEmail@server.ru</p>
+            </div>
         </div>
     </div>
 </body>
