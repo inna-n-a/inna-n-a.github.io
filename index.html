@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./main.js"></script>
+    <script defer src="./sendMsg.js"></script>
     <title>Финальный проект</title>
 </head>
 
 <body>
-    <div class="top" >
+    <div class="top">
         <div class="logo"><a href="#header"><img src="./imgs/logo.svg" alt=""></a></div>
         <nav class="menu">
             <ul class="items">
@@ -30,43 +31,37 @@
                 РАЗРАБОТЧИК </h1>
             <p>ИННА АСТАФЬЕВА, <br>живу и работаю в Москве</p>
             <p>Занимаюсь созданием веб-сайтов и приложений</p>
-            <button class="cv-btn" type="submit" onclick="window.open('./docs/CV_inna_astafyeva plus.doc')">Скачать CV</button>
-            <!-- <div class="cv-btn"><a href="./docs/CV_inna_astafyeva plus.doc">Скачать CV</a></div> -->
+            <!-- <button class="cv-btn" type="submit" onclick="window.open('./docs/CV_inna_astafyeva plus.doc')">Скачать CV</button> -->
+            <div class="cv-btn"><a href="./docs/CV_inna_astafyeva plus.pdf" target="_blank">Скачать CV</a></div>
         </div>
     </div>
     <div class="about" id="about">
         <div class="about-img"><img src="./imgs/about-img.png" alt=""></div>
         <div class="about-text">
             <h1> ОБО <span class="header-frontend">МНЕ</span> </h1>
-            <p>I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect</p>
+            <p>Я дизайнер пользовательского интерфейса (UI/UX) и Front-end разработчик, стремлюсь к созданию идеального
+                пользовательского интерфейса с учётом потребностей пользователей и технических требований. Использую
+                чистый, эффективный код для создания элегантных веб-сайтов и приложений.</p>
         </div>
     </div>
     <div class="skills" id="skills">
         <div class="skills-text">
             <h1> МОИ <span class="header-frontend">НАВЫКИ</span> </h1>
-            <p>I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect
-                UI/UX based on user needs and app
-                requirements, designs and builds Clean,
-                efficient code to build an elegant websites
-                I’m a UI/UX Designer & Front-end
-                Developer focused on making a perfect</p>
+
+            <p>Для создания макетов будущих проектов активно использую Figma и Photoshop. Обладаю навыком создания
+                прототипов в Figma. Верстаю сайты по собственным и сторонним макетам с использованием HTML5 и CSS. Для
+                создания анимации, интерактива и взаимодействия с DOM мспользую JavaScript. В процессе работы над
+                проектами активно использую Git. <br>
+                Говорю на одном языке с front- и back-end разработчиками и дизайнерами. <br>Обладаю навыками разработки
+                сайтов на платформе WordPress.</p>
+            <div class="skills-icons">
+                <img src="./imgs/sk_PhotoShop.svg" class="skills-icn" alt="">
+                <img src="./imgs/sk_figma.svg" class="skills-icn" alt="">
+                <img src="./imgs/sk_HTML5.svg" class="skills-icn" alt="">
+                <img src="./imgs/sk_CSS.svg" class="skills-icn" alt="">
+                <img src="./imgs/sk_JS.svg" class="skills-icn" alt="">
+                <img src="./imgs/sk_wordpress.svg" class="skills-icn" alt="">
+            </div>
         </div>
         <div class="skills-img"><img src="./imgs/skills-img.png" alt=""></div>
     </div>
@@ -91,35 +86,32 @@
             <h1> ОБРАТНАЯ <span class="header-frontend">СВЯЗЬ</span> </h1>
         </div>
         <section class="feedback-form">
-            <form action="" method="POST">
+            <form action="" id="add-form">
                 <div class="form-row">
                     <div class="name-push">
-                        <!-- <label for="Name" class="label1"> Name</label> -->
                         <input type="text" name="Name" id="Name" required placeholder="полное имя">
                     </div>
                     <div class="email-push">
-                        <!-- <label for="email" class="label2"> E-mail</label> -->
                         <input type="email" name="email" id="email" required placeholder="e-mail">
                     </div>
                 </div>
                 <div class="message--push">
-                    <!-- <label for="message" class="label3"> Message </label> -->
                     <textarea placeholder="сообщение..." required name="message" rows="5" cols="100"
                         id="message"></textarea>
                 </div>
-                <!-- <br> -->
                 <div class="form-btn">
-                    <input type="submit" value="отправить" name="button" required id="SendMessage"
-                        onclick="myfunction()">
+                    <input type="submit" value="отправить" name="button" required id="SendMessage">
                 </div>
             </form>
         </section>
         <div class="contacts-list">
             <div class="contacts-phone">
-                <img src="./imgs/phone.svg" alt="" class="icns"><p>  +7 999 123 45 67</p>
+                <img src="./imgs/phone.svg" alt="" class="icns">
+                <p> +7 999 123 45 67</p>
             </div>
             <div class="contacts-email">
-                <img src="./imgs/email.svg" alt="" class="icns"><p>  myEmail@server.ru</p>
+                <img src="./imgs/email.svg" alt="" class="icns">
+                <p> myEmail@server.ru</p>
             </div>
         </div>
     </div>

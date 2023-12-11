@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-/* *,*::before,::after{
-    box-sizing: border-box;
-} */
-
 body {
     height: 100%;
     width: 100%;
@@ -162,6 +158,8 @@ nav ul li a:hover {
 .about-text {
     width: 50%;
     align-self: center;
+    font-size: 1.9rem;
+
 }
 
 .about-text p {
@@ -199,6 +197,19 @@ nav ul li a:hover {
 
 .skills-img img {
     height: 70vh;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EC5C8C;
+    padding: 0 1rem;
+    border-radius: 3rem;
+    margin-top: 5rem;
+}
+
+.skills-icn {
+    scale: 0.7;
 }
 
 .projects {
@@ -335,7 +346,7 @@ nav ul li a:hover {
 }
 
 #SendMessage {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     background-color: #242424;
     margin-bottom: 2rem;
     padding: 0.5rem 0.7rem;
@@ -380,19 +391,183 @@ nav ul li a:hover {
     scale: 0.5;
 }
 
-/* .btn {
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 0.9rem;
-    padding: 0.5rem 0.7rem;
-    text-align: center;
-    border-radius: 1rem;
+@media (max-width:1366px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    .header {
+        font-size: 1.6rem;
+    }
+
+    .about,
+    .skills {
+        font-size: 1.4rem;
+    }
+
+    .about-text {
+        width: 50%;
+        align-self: center;
+        font-size: 1.4rem;
+
+    }
+
+    .skills-icons {
+
+        margin-top: 3rem;
+    }
+
+    .skills-icn {
+        scale: 0.5;
+    }
 }
 
-.btn:hover {
-    background-color: #EC5C8C;
-    color: white;
-} */
+@media (max-width:1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 
-/* .slider-img.active {
-    opacity: 1;
+
+    .header {
+        font-size: 1.4rem;
+    }
+
+    .about,
+    .skills {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        width: 50%;
+        align-self: center;
+        font-size: 1.2rem;
+
+    }
+
+    .skills-icons {
+
+        margin-top: 2rem;
+        display: inline-flex;
+    }
+
+    .skills-icn {
+        scale: 0.37;
+    }
+}
+
+@media (max-width:800px) {
+    .logo {
+        scale: 0.5;
+    }
+
+    .btn {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.3rem;
+    }
+
+    .cv-btn {
+        margin-top: 2rem;
+        padding: 0.7rem 5rem;
+        font-size: 1rem;
+    }
+
+    button a {
+        font-size: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .header {
+        font-size: 1rem;
+        /* line-height: 1.1;
+        padding-top: 7.2vh;
+        padding-left: 1rem; */
+    }
+
+    .about {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .skills {
+        font-size: 1rem;
+        padding: 0 5rem 2rem 5rem;
+        line-height: 1.27;
+    }
+
+    .skills-icons {
+         display: none;
+    }
+
+    .projects-title {
+        /* font-size: 1rem; */
+    }
+
+    .projects-slider {
+        width: 500px;
+        height: 300px;
+    }
+
+    
+    .contacts {
+        padding: 0 5rem 0 5rem;
+    }
+
+    .feedback-title {
+        font-size: 1rem;
+    }
+
+    .form-row {
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+    .email-push input,
+    .name-push input {
+        width: 11rem;
+        /* padding: 1rem 1rem;
+        border-radius: 1rem; */
+    }
+
+    .message--push {
+        font-size: 1rem;
+    }
+
+   
+
+    .message--push textarea {
+        width: 25rem;
+        margin: 0;
+        /* padding: 1rem 1rem;
+        border-radius: 1rem;
+        border: 1px solid #EC5C8C; */
+    }
+
+
+
+    #SendMessage {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0.3rem 0.9rem;
+    }
+
+    .contacts-list {
+        /* gap: 3rem; */
+        width: 25rem;
+        padding: 0.3rem 1rem;
+        font-size: 0.7rem;
+    }
+    .icns {
+        scale: 0.5;
+    }
 }
